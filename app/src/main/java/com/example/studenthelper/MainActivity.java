@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 btmview.setVisibility(View.VISIBLE);
             }
         }, secondsDelayed * 1000);
-        Objects.requireNonNull(getSupportActionBar()).hide();
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.attendance_menu:
